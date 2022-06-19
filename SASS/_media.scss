@@ -1,0 +1,46 @@
+.mediaBody{
+    overflow-x: hidden;
+    background-color: beige;
+}
+
+.wrapper2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+    
+}
+
+.gallery img{
+    width: 100%;
+}
+
+#iframe{
+    width: 100%;
+}
+
+@include tablet{
+    #iframe{
+        transform: translateX(-40vw);
+        padding-top: 10px;
+    }
+}
+
+@include mobile{
+    #iframe{
+        margin: 7rem;
+        width: 70vw;
+        padding: 0;
+    }
+    #iframe iframe{
+        width: 100vw;
+    }
+}

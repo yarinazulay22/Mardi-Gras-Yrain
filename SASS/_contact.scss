@@ -1,0 +1,78 @@
+:root{
+    --success:#2c7;
+    --error:#e43;
+}
+
+.contactBody{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.contactBody h1{
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: $hfont;
+}
+
+input[type=text]{
+    width: 100%;
+}
+
+#textArea{
+    width: 100%;
+}
+
+.container25{
+    background-color: #fff ;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0,0,0, .5);
+    width: 400px;
+    padding: 10px; 
+    margin: 20px;
+    text-align: left;
+    font-family: $tfont;
+}
+
+.formControl{
+    color: #666;
+    margin-bottom: 5px;
+}i
+
+.formControl input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.formControl.success input{
+    border-color: var(--success);
+}
+
+.formControl.error input{
+    border-color: var(--error);
+}
+
+.formControl small{
+    color: var(--error);
+    visibility: hidden;
+}
+
+.formControl.error small{
+    visibility: visible;
+}
+
+input[type=submit]{
+    border: 2px solid #666;
+    background-color: black;
+    border-radius: 4px;
+    color: beige;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    font-family: $hfont;
+}
